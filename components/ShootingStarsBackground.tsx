@@ -82,4 +82,6 @@ const ShootingStarsBackground: React.FC = React.memo(() => {
   );
 });
 
+ShootingStarsBackground.displayName = 'ShootingStarsBackground';
+
 export default ShootingStarsBackground;
