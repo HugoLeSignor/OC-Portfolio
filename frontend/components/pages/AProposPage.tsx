@@ -27,8 +27,8 @@ const AProposPage: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Mon Parcours</h2>
           <p className="mb-4 text-justify">
-            Passionné par la technologie depuis mon plus jeune âge, j'ai suivi une formation en informatique à OpenClassrooms.
-            Pendant l'obtention de mon diplôme, j'ai travaillé sur divers projets qui m'ont permis d'affiner mes compétences en développement web.
+            Passionné par la technologie depuis mon plus jeune âge, j&apos;ai suivi une formation en informatique à OpenClassrooms.
+            Pendant l&apos;obtention de mon diplôme, j&apos;ai travaillé sur divers projets qui m&apos;ont permis d&apos;affiner mes compétences en développement web.
             Mon expérience couvre à la fois le développement frontend et backend, me permettant de créer des applications web complètes et performantes.
           </p>
         </section>

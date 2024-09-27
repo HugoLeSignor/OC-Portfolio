@@ -3,10 +3,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Info, X } from 'lucide-react';
 
-interface ProjetsPageProps {
-  isDarkMode: boolean;
-}
-
 // Définition mise à jour du type pour un projet
 interface Project {
   id: number;

@@ -26,7 +26,9 @@ const ContactPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-6 text-center">Contactez-moi</h1>
-      <p className="text-lg mb-8 text-center max-w-2xl">N'hésitez pas à me contacter pour discuter de vos projets.</p>
+      <p className="text-lg mb-8 text-center max-w-2xl">
+        N&apos;hésitez pas à me contacter pour toute question ou proposition de projet.
+      </p>
       
       <form onSubmit={handleSubmit} className="w-full max-w-lg">
         <div className="mb-4">
