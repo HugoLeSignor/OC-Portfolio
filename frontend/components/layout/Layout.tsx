@@ -66,27 +66,29 @@ const Layout: React.FC = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-gradient-to-b from-[#1b2735] to-[#090a0f] text-white' : 'bg-gradient-to-b from-[#f0f8ff] to-[#e6f3ff] text-gray-800'} flex flex-col font-sans relative transition-colors duration-300`}>
       <ShootingStarsBackground isDarkMode={isDarkMode} />
       <header className='p-6 relative z-10'>
-        <div className='flex justify-between items-center'>
-          <Logo isDarkMode={isDarkMode} />
+        <div className='flex flex-col sm:flex-row justify-between items-center'>
+          <Link href='acceuil' onClick={() => changePage('home')}>
+            <Logo isDarkMode={isDarkMode} className="mb-4 sm:mb-0" />
+          </Link>
           <nav className='w-full max-w-4xl'>
-            <ul className='flex justify-end items-center space-x-6'>
-              <li>
-                <Link href='#' onClick={() => changePage('home')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
+            <ul className='flex flex-wrap justify-center sm:justify-end items-center space-x-4 sm:space-x-6'>
+              <li className="my-1">
+                <Link href='acceuil' onClick={() => changePage('home')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
                   Accueil
                 </Link>
               </li>
-              <li>
-                <Link href='#' onClick={() => changePage('projets')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
+              <li className="my-1">
+                <Link href='projets' onClick={() => changePage('projets')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
                   Projets
                 </Link>
               </li>
-              <li>
-                <Link href='#' onClick={() => changePage('a-propos')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
+              <li className="my-1">
+                <Link href='a-propos' onClick={() => changePage('a-propos')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
                   À propos
                 </Link>
               </li>
-              <li>
-                <Link href='#' onClick={() => changePage('contact')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
+              <li className="my-1">
+                <Link href='contact' onClick={() => changePage('contact')} className={`${isDarkMode ? 'text-[#FFBF00] hover:text-[#FFD700]' : 'text-[#1E90FF] hover:text-[#4169E1]'} transition-colors`}>
                   Contact
                 </Link>
               </li>

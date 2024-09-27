@@ -14,8 +14,8 @@ const AProposPage: React.FC = () => {
             <Image
               src="/moi.jpg"
               alt="Hugo Le Signor"
-              layout="fill"
-              objectFit="cover"
+              width={192} // Ajustez selon vos besoins
+              height={192} // Ajustez selon vos besoins
               className="rounded-full"
             />
           </div>

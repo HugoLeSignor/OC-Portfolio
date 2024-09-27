@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "hugolesignor.github.io/OC-Portfolio/",
+  "homepage": "https://hugolesignor.github.io/OC-Portfolio/",
   "private": true,
   "scripts": {
     "predeploy": "next build && cd out && type nul > .nojekyll && cd ..",

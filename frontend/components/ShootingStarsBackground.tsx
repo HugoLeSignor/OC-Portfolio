@@ -11,14 +11,14 @@ const ShootingStarsBackground: React.FC<ShootingStarsBackgroundProps> = React.me
   const backgroundTo = isDarkMode ? '#090a0f' : '#e6f3ff';
 
   useEffect(() => {
-    const newStars = Array.from({ length: 10 }).map((_, index) => (
+    const newStars = Array.from({ length: 20 }).map((_, index) => (
       <div 
         key={index} 
         className={`shooting_star star-${index + 1}`} 
         style={{
-          top: `${index * 10}vh`,
-          left: `${index * 15}vw`,
-          animationDelay: `${index * 1000}ms`,
+          top: `${Math.random() * 100}vh`,
+          left: `${Math.random() * 100}vw`,
+          animationDelay: `${Math.random() * 5000}ms`,
         }}
       />
     ));
@@ -42,7 +42,7 @@ const ShootingStarsBackground: React.FC<ShootingStarsBackgroundProps> = React.me
           background: linear-gradient(-45deg, ${starColor}, ${starColor.replace('1)', '0)')});
           border-radius: 999px;
           filter: drop-shadow(0 0 6px ${starColor});
-          animation: tail 10000ms ease-in-out infinite, shooting 10000ms ease-in-out infinite;
+          animation: tail 5000ms ease-in-out infinite, shooting 5000ms ease-in-out infinite;
         }
         .shooting_star::before, .shooting_star::after {
           content: '';
@@ -53,7 +53,7 @@ const ShootingStarsBackground: React.FC<ShootingStarsBackgroundProps> = React.me
           background: linear-gradient(-45deg, ${starColor.replace('1)', '0)')}, ${starColor}, ${starColor.replace('1)', '0)')});
           border-radius: 100%;
           transform: translateX(50%) rotateZ(45deg);
-          animation: shining 10000ms ease-in-out infinite;
+          animation: shining 5000ms ease-in-out infinite;
         }
         .shooting_star::after {
           transform: translateX(50%) rotateZ(-45deg);
