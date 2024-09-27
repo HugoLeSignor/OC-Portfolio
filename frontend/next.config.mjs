@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/OC-Portfolio',
   images: {
     unoptimized: true,
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/OC-Portfolio' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/OC-Portfolio' : '',
 };
 
-export default nextConfig;
+module.exports = nextConfig;

@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "next build && npm run deploy",
+    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
