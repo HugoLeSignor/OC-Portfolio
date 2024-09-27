@@ -8,4 +8,4 @@ const nextConfig = {
   basePath: process.env.NODE_ENV === 'production' ? '/OC-Portfolio' : '',
 };
 
-module.exports = nextConfig;
+export default nextConfig;

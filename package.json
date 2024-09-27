@@ -4,7 +4,7 @@
   "homepage": "hugolesignor.github.io/OC-Portfolio/",
   "private": true,
   "scripts": {
-    "predeploy": "next build && cd out && type nul > .nojekyll && cd ..",
+    "predeploy": "cd frontend && npm run build && cd .. && type nul > frontend/out/.nojekyll",
     "deploy": "gh-pages -d out -t true",
     "dev": "next dev",
     "build": "next build",
